@@ -45,10 +45,12 @@
       <file leaf-file-name="TestArithmetics.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ua/epam/TestArithmetics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="27" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="27" />
+            <state relative-caret-position="697">
+              <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#220#221#0" expanded="true" />
+                <element signature="e#257#258#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -630,8 +632,8 @@
     <history-entry file="TestArithmetics - 2016.09.13 at 17h 07m 15s.xml">
       <configuration name="TestArithmetics" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestArithmetics_div - 2016.09.13 at 16h 26m 39s.xml">
-      <configuration name="TestArithmetics.div" configurationId="JUnit" />
+    <history-entry file="TestArithmetics - 2016.09.13 at 17h 13m 31s.xml">
+      <configuration name="TestArithmetics" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestArithmetics_mult - 2016.09.13 at 16h 26m 31s.xml">
       <configuration name="TestArithmetics.mult" configurationId="JUnit" />
@@ -725,10 +727,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/epam/TestArithmetics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="27" />
+        <state relative-caret-position="697">
+          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
           </folding>
         </state>
       </provider>
