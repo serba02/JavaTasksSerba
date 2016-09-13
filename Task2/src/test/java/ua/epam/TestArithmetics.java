@@ -20,7 +20,6 @@ public class TestArithmetics {
         Assert.assertEquals(res, 10.0, 0);
     }
 
-    @Ignore
     @Test
     public void testDeduct() throws Exception {
         double res = a.deduct(3.0, 1.0);
@@ -37,5 +36,10 @@ public class TestArithmetics {
     public void testDiv() throws Exception {
         double res = a.div(4.0, 2.0);
         Assert.assertEquals(res, 2.0, 0);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testDivException(){
+        a.div(2.0, 0.0);
     }
 }
