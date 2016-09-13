@@ -42,4 +42,9 @@ public class TestArithmetics {
     public void testDivException(){
         a.div(2.0, 0.0);
     }
+
+    @Test(timeout = 1000)
+    public void testN(){
+        a.div(10.0, 2.0);
+    }
 }
