@@ -52,14 +52,12 @@
       <file leaf-file-name="TestArithmetics.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ua/epam/TestArithmetics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="38" />
+            <state relative-caret-position="407">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#1192#1193#0" expanded="true" />
-                <element signature="e#1224#1225#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -629,9 +627,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestArithmetics - 2016.09.13 at 17h 23m 46s.xml">
-      <configuration name="TestArithmetics" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestArithmetics - 2016.09.13 at 17h 35m 46s.xml">
       <configuration name="TestArithmetics" configurationId="JUnit" />
     </history-entry>
@@ -641,11 +636,14 @@
     <history-entry file="TestArithmetics - 2016.09.13 at 17h 47m 57s.xml">
       <configuration name="TestArithmetics" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestArithmetics - 2016.09.13 at 17h 50m 53s.xml">
+      <configuration name="TestArithmetics" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestArithmetics - 2016.09.13 at 17h 51m 56s.xml">
+      <configuration name="TestArithmetics" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="TestArithmetics_testAdd - 2016.09.13 at 17h 35m 39s.xml">
       <configuration name="TestArithmetics.testAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestArithmetics_testDiv - 2016.09.13 at 17h 28m 06s.xml">
-      <configuration name="TestArithmetics.testDiv" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestArithmetics_testDiv - 2016.09.13 at 17h 28m 40s.xml">
       <configuration name="TestArithmetics.testDiv" configurationId="JUnit" />
@@ -745,14 +743,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/epam/TestArithmetics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="38" />
+        <state relative-caret-position="407">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
           </folding>
         </state>
       </provider>
