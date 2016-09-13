@@ -45,8 +45,8 @@
       <file leaf-file-name="TestArithmetics.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ua/epam/TestArithmetics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="374">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,6 +84,11 @@
       <MavenGeneralSettings>
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -622,8 +627,8 @@
     <history-entry file="TestArithmetics - 2016.09.13 at 17h 04m 36s.xml">
       <configuration name="TestArithmetics" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestArithmetics_deduct - 2016.09.13 at 16h 26m 18s.xml">
-      <configuration name="TestArithmetics.deduct" configurationId="JUnit" />
+    <history-entry file="TestArithmetics - 2016.09.13 at 17h 07m 15s.xml">
+      <configuration name="TestArithmetics" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestArithmetics_div - 2016.09.13 at 16h 26m 39s.xml">
       <configuration name="TestArithmetics.div" configurationId="JUnit" />
@@ -720,8 +725,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/epam/TestArithmetics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="374">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
