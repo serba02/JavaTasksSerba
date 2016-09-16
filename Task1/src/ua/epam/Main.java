@@ -9,17 +9,22 @@ import java.util.Random;
 
 public class Main {
 
+    public static int random(int min, int max)
+    {
+        max -= min;
+        return (int) (Math.random() * ++max) + min;
+    }
+
     public static void main(String[] args) {
-        Random random = new Random();
-        int randomValue = random.nextInt(100);
-        int maxRange = 100;
-        int minRange = 0;
+        int maxRange = 99;
+        int minRange = 1;
+        final int randomValue = random(minRange, maxRange);
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<Integer> userInputList = new ArrayList<Integer>();
-        System.out.println("Input value in range 0-100");
+        System.out.println("Input value in range ["+minRange+" ,"+maxRange+"]");
         int userValue = 0;
         while (true) {
-            try {
+            try{
                 userValue = Integer.parseInt(reader.readLine());
                 if ((userValue < minRange) || (userValue > maxRange)) {
                     throw new IndexOutOfBoundsException();
@@ -46,13 +51,13 @@ public class Main {
                 System.out.println("Your inputs: "+ userInputList.toString());
             }
             catch (IndexOutOfBoundsException ex) {
-                System.out.println("Your input is out of range");
+                System.out.println("Your input is out of range. Enter value in range ["+minRange+" ,"+maxRange+"]");
             }
             catch (InvalidParameterException ex) {
                 System.out.println("You have entered this value before");
             }
             catch (Exception ex){
-                System.out.println("Incorrect input");
+                System.out.println("Incorrect input. Enter value in range ["+minRange+" ,"+maxRange+"]");
             }
         }
     }
