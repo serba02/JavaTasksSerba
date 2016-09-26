@@ -107,8 +107,8 @@
       <file leaf-file-name="DriverCarIntrTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/DriverCarIntrTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-157">
-              <caret line="262" column="7" selection-start-line="262" selection-start-column="7" selection-end-line="262" selection-end-column="7" />
+            <state relative-caret-position="285">
+              <caret line="299" column="7" selection-start-line="299" selection-start-column="7" selection-end-line="299" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -307,28 +307,7 @@
       <recent name="F:\Epam Lab\Java\DriverCarIntr\DriverCarIntr\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration default="false" name="DriverCarIntrTests.testDriverAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="DriverCarIntr" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DriverCarIntrTests" />
-      <option name="METHOD_NAME" value="testDriverAge" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.DriverCarIntrTests.testHumanAgePastDate">
     <configuration default="false" name="DriverCarIntrTests.testHumanBirthday" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="DriverCarIntr" />
@@ -405,6 +384,27 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="DriverCarIntr" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DriverCarIntrTests.testHumanAgePastDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="DriverCarIntr" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DriverCarIntrTests" />
+      <option name="METHOD_NAME" value="testHumanAgePastDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -670,19 +670,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests.testDriverAge" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests.testHumanBirthday" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests.testHumanAge" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Main (1)" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests.testHumanBirthday" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests.testHumanAge" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main (1)" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests.testHumanAgePastDate" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests.testHumanAge" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests.testHumanBirthday" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests.testDriverAge" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests.testHumanAgePastDate" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Main (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests.testHumanAge" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DriverCarIntrTests.testHumanBirthday" />
       </list>
     </recent_temporary>
   </component>
@@ -703,6 +703,9 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="DriverCarIntrTests - 2016.09.26 at 11h 59m 00s.xml">
+      <configuration name="DriverCarIntrTests" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="DriverCarIntrTests_testHumanAge - 2016.09.26 at 11h 28m 53s.xml">
       <configuration name="DriverCarIntrTests.testHumanAge" configurationId="JUnit" />
     </history-entry>
@@ -715,17 +718,14 @@
     <history-entry file="DriverCarIntrTests_testHumanAge - 2016.09.26 at 11h 37m 54s.xml">
       <configuration name="DriverCarIntrTests.testHumanAge" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DriverCarIntrTests_testHumanBirthday - 2016.09.26 at 00h 32m 55s.xml">
-      <configuration name="DriverCarIntrTests.testHumanBirthday" configurationId="JUnit" />
+    <history-entry file="DriverCarIntrTests_testHumanAgePastDate - 2016.09.26 at 12h 14m 44s.xml">
+      <configuration name="DriverCarIntrTests.testHumanAgePastDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DriverCarIntrTests_testHumanBirthday - 2016.09.26 at 00h 35m 02s.xml">
-      <configuration name="DriverCarIntrTests.testHumanBirthday" configurationId="JUnit" />
+    <history-entry file="DriverCarIntrTests_testHumanAgePastDate - 2016.09.26 at 12h 14m 54s.xml">
+      <configuration name="DriverCarIntrTests.testHumanAgePastDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DriverCarIntrTests_testHumanBirthday - 2016.09.26 at 00h 36m 59s.xml">
-      <configuration name="DriverCarIntrTests.testHumanBirthday" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DriverCarIntrTests_testIncorrectBeginEndDateConstructor - 2016.09.26 at 00h 02m 22s.xml">
-      <configuration name="DriverCarIntrTests.testIncorrectBeginEndDateConstructor" configurationId="JUnit" />
+    <history-entry file="DriverCarIntrTests_testHumanAgePastDate - 2016.09.26 at 12h 17m 15s.xml">
+      <configuration name="DriverCarIntrTests.testHumanAgePastDate" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DriverCarIntrTests_testIncorrectBeginEndDateConstructor - 2016.09.26 at 00h 03m 29s.xml">
       <configuration name="DriverCarIntrTests.testIncorrectBeginEndDateConstructor" configurationId="JUnit" />
@@ -1204,8 +1204,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DriverCarIntrTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
-          <caret line="262" column="7" selection-start-line="262" selection-start-column="7" selection-end-line="262" selection-end-column="7" />
+        <state relative-caret-position="285">
+          <caret line="299" column="7" selection-start-line="299" selection-start-column="7" selection-end-line="299" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

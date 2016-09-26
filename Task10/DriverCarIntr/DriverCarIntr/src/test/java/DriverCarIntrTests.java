@@ -285,7 +285,7 @@ public class DriverCarIntrTests {
      * Date of birth must be before current date
      */
     @Test
-    public void testHumanAge() {
+    public void testHumanAgeFutureDate() {
         int currentMonth = new Date().getMonth();
         int currentDay = new Date().getDay();
         int currentYear = Year.now().getValue();
@@ -294,5 +294,16 @@ public class DriverCarIntrTests {
         Date birthDate = new Date(2017, 04, 07);
         Human john = new Human("John" , birthDate , Human.Gender.MALE , Human.BloodGroup.FIRST);
         Assert.assertTrue(birthDate.before(currentDate));
+    }
+
+    /**
+     * Probably user cant be older 130
+     */
+    @Test
+    public void testHumanAgePastDate() {
+        int currentYear = Year.now().getValue();
+        Date birthDate = new Date(1983, 04, 07);
+        Human john = new Human("John" , birthDate , Human.Gender.MALE , Human.BloodGroup.FIRST);
+        Assert.assertTrue((currentYear-john.getBirthDate().getYear())<=130);
     }
 }
