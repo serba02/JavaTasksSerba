@@ -258,6 +258,9 @@ public class DriverCarIntrTests {
         DriverLicense driverLicense = new DriverLicense(new Date(2015, 07, 07), cat, new Date(2016, 02, 04));
     }
 
+    /**
+     * expires date cant be before fromDate
+     */
     @Test(expected = IllegalArgumentException.class)
     public void testIncorrectBeginEndDateSetters() {
         DriverLicense driverLicense = new DriverLicense();
@@ -278,6 +281,9 @@ public class DriverCarIntrTests {
         Assert.assertTrue((currentYear-johnDriver.getHuman().getBirthDate().getYear())>=18);
     }
 
+    /**
+     * Date of birth must be before current date
+     */
     @Test
     public void testHumanAge() {
         int currentMonth = new Date().getMonth();
