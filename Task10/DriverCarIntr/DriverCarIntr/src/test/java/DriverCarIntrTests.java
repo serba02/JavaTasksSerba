@@ -278,4 +278,15 @@ public class DriverCarIntrTests {
         Assert.assertTrue((currentYear-johnDriver.getHuman().getBirthDate().getYear())>=18);
     }
 
+    @Test
+    public void testHumanAge() {
+        int currentMonth = new Date().getMonth();
+        int currentDay = new Date().getDay();
+        int currentYear = Year.now().getValue();
+
+        Date currentDate = new Date(currentYear, currentMonth, currentDay);
+        Date birthDate = new Date(2017, 04, 07);
+        Human john = new Human("John" , birthDate , Human.Gender.MALE , Human.BloodGroup.FIRST);
+        Assert.assertTrue(birthDate.before(currentDate));
+    }
 }
