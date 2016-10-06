@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xsd  -->
+<actors>
+    <list>
+        <item id="1">
+            <name>Иван</name>
+            <surname>Иванов</surname>
+            <expirience>3</expirience>
+        </item>
+        <item id="2">
+            <name>Андрей</name>
+            <surname>Андреев</surname>
+            <expirience>6</expirience>
+        </item>
+        <item id="3">
+            <name>Петр</name>
+            <surname>Петров</surname>
+            <expirience>3</expirience>
+        </item>
+        <item id="4">
+            <name>Александр</name>
+            <surname>Александров</surname>
+            <expirience>4</expirience>
+        </item>
+        <item id="5">
+            <name>Олег</name>
+            <surname>Олегов</surname>
+            <expirience>2</expirience>
+        </item>
+    </list>
+</actors>
