@@ -6,6 +6,7 @@ import ua.epam.dao.jdbc.*;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.Properties;
 
 public class MySqlJdbcDaoFactory extends DaoFactory {
@@ -33,7 +34,6 @@ public class MySqlJdbcDaoFactory extends DaoFactory {
 		}catch(Exception ex){
 			throw new RuntimeException( ex );
 		}
-
 	}
 
 	@Override

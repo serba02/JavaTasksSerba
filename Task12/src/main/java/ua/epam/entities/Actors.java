@@ -40,4 +40,14 @@ public class Actors {
     public void setActorExperience(int actorExperience) {
         this.actorExperience = actorExperience;
     }
+
+    @Override
+    public String toString() {
+        return "Actors{" +
+                "actorId=" + actorId +
+                ", actorName='" + actorName + '\'' +
+                ", actorSurname='" + actorSurname + '\'' +
+                ", actorExperience=" + actorExperience +
+                '}';
+    }
 }
