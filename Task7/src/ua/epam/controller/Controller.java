@@ -336,12 +336,10 @@ public class Controller {
         notebook.setAddress(correctAddress);
         notebook.setNoteAddedDate(correctUserAddDate);
         notebook.setNoteLastChange(correctUserChangeDate);
-        flag = 1;
+        view.showToConsole(notebook.toString());
     }
 
-    public void printModel(){
-        if(flag == 1){
-            view.showToConsole(notebook.toString());
-        }
-    }
+
+
+
 }

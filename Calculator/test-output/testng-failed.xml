@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" name="Failed suite [Group Test]" parallel="methods">
+  <test name="TestNG Group(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="double"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.TestCalculator">
+        <methods>
+          <include name="testDoubleCTanNegTest" invocation-numbers="0"/>
+          <include name="testDoubleTanPosTest" invocation-numbers="5 4 3 2 0 1 7 6 8"/>
+          <include name="testDoubleTanNegTest" invocation-numbers="0"/>
+          <include name="testDoubleDivNegTest"/>
+          <include name="beforeTest"/>
+          <include name="testDoubleCTanPosTest" invocation-numbers="3 2 4 0 1"/>
+          <include name="testDoubleCosPosTest" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="testDoubleSqrtNegTest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- tests.TestCalculator -->
+    </classes>
+  </test> <!-- TestNG Group(failed) -->
+</suite> <!-- Failed suite [Group Test] -->

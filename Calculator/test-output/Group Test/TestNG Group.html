@@ -1,0 +1,1596 @@
+<html>
+<head>
+<title>TestNG:  TestNG Group</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestNG Group</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/25/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 02 13:32:41 EET 2016</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1326 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>double </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleCTanNegTest()'><b>testDoubleCTanNegTest</b><br>Test class: tests.TestCalculator<br>Parameters: 0.0<br/>
+<a href="#Output-1820102690" onClick='toggleBox("Output-1820102690", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1820102690" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1820102690">
+</br>Completed executing method: TestCalculator.testDoubleCTanNegTest Elapsed time: -1023<br/>
+</div>
+</td>
+<td><div><pre>org.testng.TestException: 
+Method TestCalculator.testDoubleCTanNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Method TestCalculator.testDoubleCTanNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	... 7 more
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1820102690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1820102690'><pre>org.testng.TestException: 
+Expected exception java.lang.IllegalArgumentException but got org.testng.TestException: 
+Method TestCalculator.testDoubleCTanNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1497)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:87)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.testng.TestException: 
+Method TestCalculator.testDoubleCTanNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1512)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	... 7 more
+</pre></div></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleCTanPosTest()'><b>testDoubleCTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 34.0, -1.6038519064146899<br/>
+<a href="#Output-1465374264" onClick='toggleBox("Output-1465374264", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1465374264" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1465374264">
+</br>Completed executing method: TestCalculator.testDoubleCTanPosTest Elapsed time: -1<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-1.6038519064146899] but found [1.0]
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1465374264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1465374264'><pre>java.lang.AssertionError: expected [-1.6038519064146899] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleCTanPosTest()'><b>testDoubleCTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 57.0, 2.063135125298919<br/>
+<a href="#Output-1872523739" onClick='toggleBox("Output-1872523739", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1872523739" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1872523739">
+</br>Completed executing method: TestCalculator.testDoubleCTanPosTest Elapsed time: -1<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [2.063135125298919] but found [1.0]
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1872523739", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1872523739'><pre>java.lang.AssertionError: expected [2.063135125298919] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleCTanPosTest()'><b>testDoubleCTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 95.0, 1.0686586782881817<br/>
+<a href="#Output-1168559506" onClick='toggleBox("Output-1168559506", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1168559506" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1168559506">
+</br>Completed executing method: TestCalculator.testDoubleCTanPosTest Elapsed time: -2<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [1.0686586782881817] but found [1.0]
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1168559506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1168559506'><pre>java.lang.AssertionError: expected [1.0686586782881817] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleCTanPosTest()'><b>testDoubleCTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 4.0, 0.8636911544506167<br/>
+<a href="#Output-1373113109" onClick='toggleBox("Output-1373113109", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1373113109" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1373113109">
+</br>Completed executing method: TestCalculator.testDoubleCTanPosTest Elapsed time: -2<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [0.8636911544506167] but found [0.999329299739067]
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1373113109", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1373113109'><pre>java.lang.AssertionError: expected [0.8636911544506167] but found [0.999329299739067]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleCTanPosTest()'><b>testDoubleCTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 50.0, -3.6778144508505695<br/>
+<a href="#Output-89774472" onClick='toggleBox("Output-89774472", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-89774472" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-89774472">
+</br>Completed executing method: TestCalculator.testDoubleCTanPosTest Elapsed time: -34<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-3.6778144508505695] but found [1.0]
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace89774472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace89774472'><pre>java.lang.AssertionError: expected [-3.6778144508505695] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleCosPosTest()'><b>testDoubleCosPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 3.0, -0.9899924966004454<br/>
+<a href="#Output-231277005" onClick='toggleBox("Output-231277005", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-231277005" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-231277005">
+</br>Completed executing method: TestCalculator.testDoubleCosPosTest Elapsed time: -2<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-0.9899924966004454] but found [0.1411200080598672]
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace231277005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace231277005'><pre>java.lang.AssertionError: expected [-0.9899924966004454] but found [0.1411200080598672]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleCosPosTest()'><b>testDoubleCosPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 60.0, -0.9524129804151563<br/>
+<a href="#Output-744007400" onClick='toggleBox("Output-744007400", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-744007400" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-744007400">
+</br>Completed executing method: TestCalculator.testDoubleCosPosTest Elapsed time: -5<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-0.9524129804151563] but found [-0.3048106211022167]
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace744007400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace744007400'><pre>java.lang.AssertionError: expected [-0.9524129804151563] but found [-0.3048106211022167]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleCosPosTest()'><b>testDoubleCosPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 12.0, 0.8438539587324921<br/>
+<a href="#Output-735960181" onClick='toggleBox("Output-735960181", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-735960181" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-735960181">
+</br>Completed executing method: TestCalculator.testDoubleCosPosTest Elapsed time: -9<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [0.8438539587324921] but found [-0.5365729180004349]
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace735960181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace735960181'><pre>java.lang.AssertionError: expected [0.8438539587324921] but found [-0.5365729180004349]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleCosPosTest()'><b>testDoubleCosPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 30.0, 0.15425144988758405<br/>
+<a href="#Output-1539755553" onClick='toggleBox("Output-1539755553", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1539755553" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1539755553">
+</br>Completed executing method: TestCalculator.testDoubleCosPosTest Elapsed time: -10<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [0.15425144988758405] but found [-0.9880316240928618]
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1539755553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1539755553'><pre>java.lang.AssertionError: expected [0.15425144988758405] but found [-0.9880316240928618]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleCosPosTest()'><b>testDoubleCosPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 180.0, -0.5984600690578581<br/>
+<a href="#Output-141776681" onClick='toggleBox("Output-141776681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-141776681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-141776681">
+</br>Completed executing method: TestCalculator.testDoubleCosPosTest Elapsed time: -12<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-0.5984600690578581] but found [-0.8011526357338304]
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace141776681", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace141776681'><pre>java.lang.AssertionError: expected [-0.5984600690578581] but found [-0.8011526357338304]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleCosPosTest()'><b>testDoubleCosPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 0.0, 1.0<br/>
+<a href="#Output-82381174" onClick='toggleBox("Output-82381174", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-82381174" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-82381174">
+</br>Completed executing method: TestCalculator.testDoubleCosPosTest Elapsed time: -13<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [1.0] but found [0.0]
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace82381174", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace82381174'><pre>java.lang.AssertionError: expected [1.0] but found [0.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleDivNegTest()'><b>testDoubleDivNegTest</b><br>Test class: tests.TestCalculator</td>
+<td><div><pre>org.testng.TestNGException: 
+The data provider is trying to pass 3 parameters but the method tests.TestCalculator#testDoubleDivNegTest takes 2
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8942813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8942813'><pre>org.testng.TestNGException: 
+The data provider is trying to pass 3 parameters but the method tests.TestCalculator#testDoubleDivNegTest takes 2
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1337)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1203)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSqrtNegTest()'><b>testDoubleSqrtNegTest</b><br>Test class: tests.TestCalculator<br>Parameters: -3.0<br/>
+<a href="#Output-1444015804" onClick='toggleBox("Output-1444015804", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1444015804" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1444015804">
+</br>Completed executing method: TestCalculator.testDoubleSqrtNegTest Elapsed time: -1011<br/>
+</div>
+</td>
+<td><div><pre>org.testng.TestException: 
+Method TestCalculator.testDoubleSqrtNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Method TestCalculator.testDoubleSqrtNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	... 7 more
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1444015804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1444015804'><pre>org.testng.TestException: 
+Expected exception java.lang.IllegalArgumentException but got org.testng.TestException: 
+Method TestCalculator.testDoubleSqrtNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1497)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:87)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.testng.TestException: 
+Method TestCalculator.testDoubleSqrtNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1512)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	... 7 more
+</pre></div></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSqrtNegTest()'><b>testDoubleSqrtNegTest</b><br>Test class: tests.TestCalculator<br>Parameters: -6.0<br/>
+<a href="#Output-1176725291" onClick='toggleBox("Output-1176725291", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1176725291" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1176725291">
+</br>Completed executing method: TestCalculator.testDoubleSqrtNegTest Elapsed time: -1011<br/>
+</div>
+</td>
+<td><div><pre>org.testng.TestException: 
+Method TestCalculator.testDoubleSqrtNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Method TestCalculator.testDoubleSqrtNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	... 7 more
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1176725291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1176725291'><pre>org.testng.TestException: 
+Expected exception java.lang.IllegalArgumentException but got org.testng.TestException: 
+Method TestCalculator.testDoubleSqrtNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1497)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:87)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.testng.TestException: 
+Method TestCalculator.testDoubleSqrtNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1512)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	... 7 more
+</pre></div></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleTanNegTest()'><b>testDoubleTanNegTest</b><br>Test class: tests.TestCalculator<br>Parameters: 90.0<br/>
+<a href="#Output-114001629" onClick='toggleBox("Output-114001629", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-114001629" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-114001629">
+</br>Completed executing method: TestCalculator.testDoubleTanNegTest Elapsed time: -1006<br/>
+</div>
+</td>
+<td><div><pre>org.testng.TestException: 
+Method TestCalculator.testDoubleTanNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Method TestCalculator.testDoubleTanNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	... 7 more
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace114001629", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace114001629'><pre>org.testng.TestException: 
+Expected exception java.lang.IllegalArgumentException but got org.testng.TestException: 
+Method TestCalculator.testDoubleTanNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1497)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:87)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.testng.TestException: 
+Method TestCalculator.testDoubleTanNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1512)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	... 7 more
+</pre></div></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleTanPosTest()'><b>testDoubleTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 5.0, -3.380515006246586<br/>
+<a href="#Output-1526604749" onClick='toggleBox("Output-1526604749", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1526604749" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1526604749">
+</br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: 0<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-3.380515006246586] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1526604749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1526604749'><pre>java.lang.AssertionError: expected [-3.380515006246586] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleTanPosTest()'><b>testDoubleTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 4.0, 1.1578212823495775<br/>
+<a href="#Output-1371549290" onClick='toggleBox("Output-1371549290", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1371549290" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1371549290">
+</br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: 0<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [1.1578212823495775] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1371549290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1371549290'><pre>java.lang.AssertionError: expected [1.1578212823495775] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleTanPosTest()'><b>testDoubleTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 2.0, -2.185039863261519<br/>
+<a href="#Output-1442554683" onClick='toggleBox("Output-1442554683", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1442554683" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1442554683">
+</br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: -1<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-2.185039863261519] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1442554683", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1442554683'><pre>java.lang.AssertionError: expected [-2.185039863261519] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleTanPosTest()'><b>testDoubleTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 60.0, 0.3200403893795629<br/>
+<a href="#Output-2076215875" onClick='toggleBox("Output-2076215875", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2076215875" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2076215875">
+</br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: 0<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [0.3200403893795629] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2076215875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2076215875'><pre>java.lang.AssertionError: expected [0.3200403893795629] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleTanPosTest()'><b>testDoubleTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 0.0, 0.0<br/>
+<a href="#Output-104795030" onClick='toggleBox("Output-104795030", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-104795030" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-104795030">
+</br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: -15<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [0.0] but found [NaN]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace104795030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace104795030'><pre>java.lang.AssertionError: expected [0.0] but found [NaN]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleTanPosTest()'><b>testDoubleTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 30.0, -6.4053311966462765<br/>
+<a href="#Output-409673867" onClick='toggleBox("Output-409673867", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-409673867" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-409673867">
+</br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: -16<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-6.4053311966462765] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace409673867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace409673867'><pre>java.lang.AssertionError: expected [-6.4053311966462765] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleTanPosTest()'><b>testDoubleTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 6.0, -0.29100619138474915<br/>
+<a href="#Output-2031300924" onClick='toggleBox("Output-2031300924", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2031300924" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2031300924">
+</br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: -20<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-0.29100619138474915] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2031300924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2031300924'><pre>java.lang.AssertionError: expected [-0.29100619138474915] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleTanPosTest()'><b>testDoubleTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 7.0, 0.8714479827243188<br/>
+<a href="#Output-1996614108" onClick='toggleBox("Output-1996614108", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1996614108" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1996614108">
+</br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: -20<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [0.8714479827243188] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1996614108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1996614108'><pre>java.lang.AssertionError: expected [0.8714479827243188] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleTanPosTest()'><b>testDoubleTanPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 180.0, 1.3386902103511544<br/>
+<a href="#Output-904715640" onClick='toggleBox("Output-904715640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-904715640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-904715640">
+</br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: -22<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [1.3386902103511544] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace904715640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace904715640'><pre>java.lang.AssertionError: expected [1.3386902103511544] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleDivPosTest()'><b>testDoubleDivPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: -43.0, -56.0, 0.7678571428571429<br/>
+<a href="#Output-1370936275" onClick='toggleBox("Output-1370936275", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1370936275" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1370936275">
+</br>Completed executing method: TestCalculator.testDoubleDivPosTest Elapsed time: -1010<br/>
+</br>Test [testDoubleDivPosTest] has passed within [1010].Thread ID: 69<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleDivPosTest()'><b>testDoubleDivPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 2.0, 3.0, 0.6666666666666666<br/>
+<a href="#Output-819388162" onClick='toggleBox("Output-819388162", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-819388162" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-819388162">
+</br>Completed executing method: TestCalculator.testDoubleDivPosTest Elapsed time: -1024<br/>
+</br>Test [testDoubleDivPosTest] has passed within [1024].Thread ID: 65<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleDivPosTest()'><b>testDoubleDivPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 100.0, 999.0, 0.1001001001001001<br/>
+<a href="#Output-574462285" onClick='toggleBox("Output-574462285", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-574462285" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-574462285">
+</br>Completed executing method: TestCalculator.testDoubleDivPosTest Elapsed time: -1041<br/>
+</br>Test [testDoubleDivPosTest] has passed within [1041].Thread ID: 67<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleDivPosTest()'><b>testDoubleDivPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 0.0, 10.0, 0.0<br/>
+<a href="#Output-1509701006" onClick='toggleBox("Output-1509701006", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1509701006" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1509701006">
+</br>Completed executing method: TestCalculator.testDoubleDivPosTest Elapsed time: -1041<br/>
+</br>Test [testDoubleDivPosTest] has passed within [1041].Thread ID: 66<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleDivPosTest()'><b>testDoubleDivPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: -20.0, 43.0, -0.46511627906976744<br/>
+<a href="#Output-2046582958" onClick='toggleBox("Output-2046582958", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2046582958" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2046582958">
+</br>Completed executing method: TestCalculator.testDoubleDivPosTest Elapsed time: -1041<br/>
+</br>Test [testDoubleDivPosTest] has passed within [1041].Thread ID: 68<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleMultPosTest()'><b>testDoubleMultPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 2.0, 3.0, 6.0<br/>
+<a href="#Output-1118459623" onClick='toggleBox("Output-1118459623", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1118459623" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1118459623">
+</br>Completed executing method: TestCalculator.testDoubleMultPosTest Elapsed time: -1002<br/>
+</br>Test [testDoubleMultPosTest] has passed within [1002].Thread ID: 41<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleMultPosTest()'><b>testDoubleMultPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 0.0, 0.0, 0.0<br/>
+<a href="#Output-351429945" onClick='toggleBox("Output-351429945", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-351429945" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-351429945">
+</br>Completed executing method: TestCalculator.testDoubleMultPosTest Elapsed time: -1002<br/>
+</br>Test [testDoubleMultPosTest] has passed within [1002].Thread ID: 40<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleMultPosTest()'><b>testDoubleMultPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 0.0, 10.0, 0.0<br/>
+<a href="#Output-758491478" onClick='toggleBox("Output-758491478", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-758491478" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-758491478">
+</br>Completed executing method: TestCalculator.testDoubleMultPosTest Elapsed time: -1003<br/>
+</br>Test [testDoubleMultPosTest] has passed within [1003].Thread ID: 42<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleMultPosTest()'><b>testDoubleMultPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 100.0, 999.0, 99900.0<br/>
+<a href="#Output-941489627" onClick='toggleBox("Output-941489627", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-941489627" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-941489627">
+</br>Completed executing method: TestCalculator.testDoubleMultPosTest Elapsed time: -1003<br/>
+</br>Test [testDoubleMultPosTest] has passed within [1003].Thread ID: 43<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleMultPosTest()'><b>testDoubleMultPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: -20.0, 43.0, -860.0<br/>
+<a href="#Output-1108641717" onClick='toggleBox("Output-1108641717", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1108641717" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1108641717">
+</br>Completed executing method: TestCalculator.testDoubleMultPosTest Elapsed time: -1003<br/>
+</br>Test [testDoubleMultPosTest] has passed within [1003].Thread ID: 44<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleMultPosTest()'><b>testDoubleMultPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: -43.0, -56.0, 2408.0<br/>
+<a href="#Output-1083128105" onClick='toggleBox("Output-1083128105", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1083128105" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1083128105">
+</br>Completed executing method: TestCalculator.testDoubleMultPosTest Elapsed time: -1003<br/>
+</br>Test [testDoubleMultPosTest] has passed within [1003].Thread ID: 45<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoublePowPosTest()'><b>testDoublePowPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 2.0, 2.0, 4.0<br/>
+<a href="#Output-1278628409" onClick='toggleBox("Output-1278628409", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1278628409" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1278628409">
+</br>Completed executing method: TestCalculator.testDoublePowPosTest Elapsed time: -1011<br/>
+</br>Test [testDoublePowPosTest] has passed within [1011].Thread ID: 75<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoublePowPosTest()'><b>testDoublePowPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 2.0, 3.0, 8.0<br/>
+<a href="#Output-306629438" onClick='toggleBox("Output-306629438", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-306629438" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-306629438">
+</br>Completed executing method: TestCalculator.testDoublePowPosTest Elapsed time: -1011<br/>
+</br>Test [testDoublePowPosTest] has passed within [1011].Thread ID: 76<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSinPosTest()'><b>testDoubleSinPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 3.0, 0.1411200080598672<br/>
+<a href="#Output-730580215" onClick='toggleBox("Output-730580215", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-730580215" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-730580215">
+</br>Completed executing method: TestCalculator.testDoubleSinPosTest Elapsed time: -1018<br/>
+</br>Test [testDoubleSinPosTest] has passed within [1018].Thread ID: 25<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSinPosTest()'><b>testDoubleSinPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 60.0, -0.3048106211022167<br/>
+<a href="#Output-158277148" onClick='toggleBox("Output-158277148", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-158277148" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-158277148">
+</br>Completed executing method: TestCalculator.testDoubleSinPosTest Elapsed time: -1015<br/>
+</br>Test [testDoubleSinPosTest] has passed within [1015].Thread ID: 26<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSinPosTest()'><b>testDoubleSinPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 12.0, -0.5365729180004349<br/>
+<a href="#Output-2073736517" onClick='toggleBox("Output-2073736517", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2073736517" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2073736517">
+</br>Completed executing method: TestCalculator.testDoubleSinPosTest Elapsed time: -1014<br/>
+</br>Test [testDoubleSinPosTest] has passed within [1014].Thread ID: 27<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSinPosTest()'><b>testDoubleSinPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 180.0, -0.8011526357338304<br/>
+<a href="#Output-91242417" onClick='toggleBox("Output-91242417", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-91242417" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-91242417">
+</br>Completed executing method: TestCalculator.testDoubleSinPosTest Elapsed time: -1013<br/>
+</br>Test [testDoubleSinPosTest] has passed within [1013].Thread ID: 29<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSinPosTest()'><b>testDoubleSinPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 30.0, -0.9880316240928618<br/>
+<a href="#Output-1100203231" onClick='toggleBox("Output-1100203231", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1100203231" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1100203231">
+</br>Completed executing method: TestCalculator.testDoubleSinPosTest Elapsed time: -1013<br/>
+</br>Test [testDoubleSinPosTest] has passed within [1013].Thread ID: 28<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSinPosTest()'><b>testDoubleSinPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 0.0, 0.0<br/>
+<a href="#Output-1902199108" onClick='toggleBox("Output-1902199108", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1902199108" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1902199108">
+</br>Completed executing method: TestCalculator.testDoubleSinPosTest Elapsed time: -1013<br/>
+</br>Test [testDoubleSinPosTest] has passed within [1013].Thread ID: 30<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSqrtPosTest()'><b>testDoubleSqrtPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 9.0, 3.0<br/>
+<a href="#Output-3566925" onClick='toggleBox("Output-3566925", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3566925" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3566925">
+</br>Completed executing method: TestCalculator.testDoubleSqrtPosTest Elapsed time: -1004<br/>
+</br>Test [testDoubleSqrtPosTest] has passed within [1004].Thread ID: 47<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSqrtPosTest()'><b>testDoubleSqrtPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 4.0, 2.0<br/>
+<a href="#Output-1991100343" onClick='toggleBox("Output-1991100343", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1991100343" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1991100343">
+</br>Completed executing method: TestCalculator.testDoubleSqrtPosTest Elapsed time: -1004<br/>
+</br>Test [testDoubleSqrtPosTest] has passed within [1004].Thread ID: 46<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSubPosTest()'><b>testDoubleSubPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 0.0, 0.0, 0.0<br/>
+<a href="#Output-205886487" onClick='toggleBox("Output-205886487", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-205886487" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-205886487">
+</br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1011<br/>
+</br>Test [testDoubleSubPosTest] has passed within [1011].Thread ID: 79<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSubPosTest()'><b>testDoubleSubPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 10.0, 1.0, 9.0<br/>
+<a href="#Output-1088494730" onClick='toggleBox("Output-1088494730", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1088494730" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1088494730">
+</br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1011<br/>
+</br>Test [testDoubleSubPosTest] has passed within [1011].Thread ID: 81<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSubPosTest()'><b>testDoubleSubPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 4.3, 2.0, 2.3<br/>
+<a href="#Output-1778598322" onClick='toggleBox("Output-1778598322", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1778598322" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1778598322">
+</br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1011<br/>
+</br>Test [testDoubleSubPosTest] has passed within [1011].Thread ID: 80<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSubPosTest()'><b>testDoubleSubPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 99.3, 72.0, 27.299999999999997<br/>
+<a href="#Output-5315098" onClick='toggleBox("Output-5315098", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5315098" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5315098">
+</br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1012<br/>
+</br>Test [testDoubleSubPosTest] has passed within [1012].Thread ID: 82<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSubPosTest()'><b>testDoubleSubPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: -93.1, 35.0, -128.1<br/>
+<a href="#Output-340131255" onClick='toggleBox("Output-340131255", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-340131255" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-340131255">
+</br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1012<br/>
+</br>Test [testDoubleSubPosTest] has passed within [1012].Thread ID: 84<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSubPosTest()'><b>testDoubleSubPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 83.0, 96.0, -13.0<br/>
+<a href="#Output-1410830519" onClick='toggleBox("Output-1410830519", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1410830519" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1410830519">
+</br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1012<br/>
+</br>Test [testDoubleSubPosTest] has passed within [1012].Thread ID: 83<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSubPosTest()'><b>testDoubleSubPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: -68.0, -54.5, -13.5<br/>
+<a href="#Output-718523673" onClick='toggleBox("Output-718523673", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-718523673" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-718523673">
+</br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1012<br/>
+</br>Test [testDoubleSubPosTest] has passed within [1012].Thread ID: 85<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSumPosTest()'><b>testDoubleSumPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: -10.0, 50.5, 40.5<br/>
+<a href="#Output-1210105214" onClick='toggleBox("Output-1210105214", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1210105214" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1210105214">
+</br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1001<br/>
+</br>Test [testDoubleSumPosTest] has passed within [1001].Thread ID: 37<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSumPosTest()'><b>testDoubleSumPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 25.5, 23.7, 49.2<br/>
+<a href="#Output-1841986379" onClick='toggleBox("Output-1841986379", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1841986379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1841986379">
+</br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1001<br/>
+</br>Test [testDoubleSumPosTest] has passed within [1001].Thread ID: 36<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSumPosTest()'><b>testDoubleSumPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 11.0, 99.0, 110.0<br/>
+<a href="#Output-608986316" onClick='toggleBox("Output-608986316", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-608986316" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-608986316">
+</br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1002<br/>
+</br>Test [testDoubleSumPosTest] has passed within [1002].Thread ID: 34<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSumPosTest()'><b>testDoubleSumPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 0.01, 10.01, 10.02<br/>
+<a href="#Output-642241659" onClick='toggleBox("Output-642241659", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-642241659" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-642241659">
+</br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1012<br/>
+</br>Test [testDoubleSumPosTest] has passed within [1012].Thread ID: 32<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSumPosTest()'><b>testDoubleSumPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: -20.3, -40.5, -60.8<br/>
+<a href="#Output-1204540270" onClick='toggleBox("Output-1204540270", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1204540270" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1204540270">
+</br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1007<br/>
+</br>Test [testDoubleSumPosTest] has passed within [1007].Thread ID: 38<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSumPosTest()'><b>testDoubleSumPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 15.0, 101.0, 116.0<br/>
+<a href="#Output-1979673801" onClick='toggleBox("Output-1979673801", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1979673801" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1979673801">
+</br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1008<br/>
+</br>Test [testDoubleSumPosTest] has passed within [1008].Thread ID: 35<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSumPosTest()'><b>testDoubleSumPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 3.0, 7.0, 10.0<br/>
+<a href="#Output-835007305" onClick='toggleBox("Output-835007305", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-835007305" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-835007305">
+</br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1009<br/>
+</br>Test [testDoubleSumPosTest] has passed within [1009].Thread ID: 33<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSumPosTest()'><b>testDoubleSumPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 0.0, 10.0, 10.0<br/>
+<a href="#Output-1004231467" onClick='toggleBox("Output-1004231467", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1004231467" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1004231467">
+</br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1013<br/>
+</br>Test [testDoubleSumPosTest] has passed within [1013].Thread ID: 31<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+<tr>
+<td title='tests.TestCalculator.testDoubleSumPosTest()'><b>testDoubleSumPosTest</b><br>Test class: tests.TestCalculator<br>Parameters: 0.0, 0.0, 0.0<br/>
+<a href="#Output-1338008778" onClick='toggleBox("Output-1338008778", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1338008778" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1338008778">
+</br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1013<br/>
+</br>Test [testDoubleSumPosTest] has passed within [1013].Thread ID: 39<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestCalculator@1bc6a36e</td></tr>
+</table><p>
+</body>
+</html>

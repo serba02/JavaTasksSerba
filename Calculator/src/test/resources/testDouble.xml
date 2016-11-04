@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Group Test" parallel="methods" thread-count="30">
+
+    <test name="TestNG Group">
+        <groups>
+            <run>
+                <include name="double"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="tests.TestCalculator">
+            </class>
+        </classes>
+    </test>
+
+</suite>

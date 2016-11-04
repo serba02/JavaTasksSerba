@@ -1,0 +1,2323 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 25 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Group_Test">
+              <span class="suite-name border-failed">Group Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Group_Test">
+                    <span>C:\Users\Lev_Serba\Desktop\Calculator\src\test\resources\testDouble.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Group_Test">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Group_Test">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Group_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Group_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Group_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Group_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">62 methods, 25 failed,   37 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Group_Test" class="hide-methods failed suite-Group_Test"> (hide)</a> <!-- hide-methods failed suite-Group_Test -->
+                      <a href="#" panel-name="suite-Group_Test" class="show-methods failed suite-Group_Test"> (show)</a> <!-- show-methods failed suite-Group_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-Group_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleCTanNegTest(0.0)">testDoubleCTanNegTest(0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleCTanPosTest(57.0, 2.063135125298919)">testDoubleCTanPosTest(57.0, 2.063135125298919)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleCTanPosTest(4.0, 0.8636911544506167)">testDoubleCTanPosTest(4.0, 0.8636911544506167)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleCTanPosTest(50.0, -3.6778144508505695)">testDoubleCTanPosTest(50.0, -3.6778144508505695)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleCTanPosTest(34.0, -1.6038519064146899)">testDoubleCTanPosTest(34.0, -1.6038519064146899)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleCTanPosTest(95.0, 1.0686586782881817)">testDoubleCTanPosTest(95.0, 1.0686586782881817)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleCosPosTest(3.0, -0.9899924966004454)">testDoubleCosPosTest(3.0, -0.9899924966004454)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleCosPosTest(180.0, -0.5984600690578581)">testDoubleCosPosTest(180.0, -0.5984600690578581)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleCosPosTest(0.0, 1.0)">testDoubleCosPosTest(0.0, 1.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleCosPosTest(30.0, 0.15425144988758405)">testDoubleCosPosTest(30.0, 0.15425144988758405)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleCosPosTest(12.0, 0.8438539587324921)">testDoubleCosPosTest(12.0, 0.8438539587324921)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleCosPosTest(60.0, -0.9524129804151563)">testDoubleCosPosTest(60.0, -0.9524129804151563)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleDivNegTest">testDoubleDivNegTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSqrtNegTest(-6.0)">testDoubleSqrtNegTest(-6.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSqrtNegTest(-3.0)">testDoubleSqrtNegTest(-3.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleTanNegTest(90.0)">testDoubleTanNegTest(90.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleTanPosTest(2.0, -2.185039863261519)">testDoubleTanPosTest(2.0, -2.185039863261519)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleTanPosTest(60.0, 0.3200403893795629)">testDoubleTanPosTest(60.0, 0.3200403893795629)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleTanPosTest(180.0, 1.3386902103511544)">testDoubleTanPosTest(180.0, 1.3386902103511544)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleTanPosTest(7.0, 0.8714479827243188)">testDoubleTanPosTest(7.0, 0.8714479827243188)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleTanPosTest(30.0, -6.4053311966462765)">testDoubleTanPosTest(30.0, -6.4053311966462765)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleTanPosTest(0.0, 0.0)">testDoubleTanPosTest(0.0, 0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleTanPosTest(4.0, 1.1578212823495775)">testDoubleTanPosTest(4.0, 1.1578212823495775)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleTanPosTest(6.0, -0.29100619138474915)">testDoubleTanPosTest(6.0, -0.29100619138474915)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleTanPosTest(5.0, -3.380515006246586)">testDoubleTanPosTest(5.0, -3.380515006246586)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Group_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Group_Test" class="hide-methods passed suite-Group_Test"> (hide)</a> <!-- hide-methods passed suite-Group_Test -->
+                      <a href="#" panel-name="suite-Group_Test" class="show-methods passed suite-Group_Test"> (show)</a> <!-- show-methods passed suite-Group_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Group_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleDivPosTest(-20.0, 43.0, -0.46511627906976744)">testDoubleDivPosTest(-20.0, 43.0, -0.46511627906976744)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleDivPosTest(2.0, 3.0, 0.6666666666666666)">testDoubleDivPosTest(2.0, 3.0, 0.6666666666666666)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleDivPosTest(-43.0, -56.0, 0.7678571428571429)">testDoubleDivPosTest(-43.0, -56.0, 0.7678571428571429)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleDivPosTest(100.0, 999.0, 0.1001001001001001)">testDoubleDivPosTest(100.0, 999.0, 0.1001001001001001)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleDivPosTest(0.0, 10.0, 0.0)">testDoubleDivPosTest(0.0, 10.0, 0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleMultPosTest(100.0, 999.0, 99900.0)">testDoubleMultPosTest(100.0, 999.0, 99900.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleMultPosTest(0.0, 0.0, 0.0)">testDoubleMultPosTest(0.0, 0.0, 0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleMultPosTest(2.0, 3.0, 6.0)">testDoubleMultPosTest(2.0, 3.0, 6.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleMultPosTest(-20.0, 43.0, -860.0)">testDoubleMultPosTest(-20.0, 43.0, -860.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleMultPosTest(0.0, 10.0, 0.0)">testDoubleMultPosTest(0.0, 10.0, 0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleMultPosTest(-43.0, -56.0, 2408.0)">testDoubleMultPosTest(-43.0, -56.0, 2408.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoublePowPosTest(2.0, 2.0, 4.0)">testDoublePowPosTest(2.0, 2.0, 4.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoublePowPosTest(2.0, 3.0, 8.0)">testDoublePowPosTest(2.0, 3.0, 8.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSinPosTest(180.0, -0.8011526357338304)">testDoubleSinPosTest(180.0, -0.8011526357338304)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSinPosTest(30.0, -0.9880316240928618)">testDoubleSinPosTest(30.0, -0.9880316240928618)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSinPosTest(12.0, -0.5365729180004349)">testDoubleSinPosTest(12.0, -0.5365729180004349)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSinPosTest(0.0, 0.0)">testDoubleSinPosTest(0.0, 0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSinPosTest(60.0, -0.3048106211022167)">testDoubleSinPosTest(60.0, -0.3048106211022167)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSinPosTest(3.0, 0.1411200080598672)">testDoubleSinPosTest(3.0, 0.1411200080598672)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSqrtPosTest(4.0, 2.0)">testDoubleSqrtPosTest(4.0, 2.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSqrtPosTest(9.0, 3.0)">testDoubleSqrtPosTest(9.0, 3.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSubPosTest(-68.0, -54.5, -13.5)">testDoubleSubPosTest(-68.0, -54.5, -13.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSubPosTest(99.3, 72.0, 27.299999999999997)">testDoubleSubPosTest(99.3, 72.0, 27.299999999999997)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSubPosTest(0.0, 0.0, 0.0)">testDoubleSubPosTest(0.0, 0.0, 0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSubPosTest(83.0, 96.0, -13.0)">testDoubleSubPosTest(83.0, 96.0, -13.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSubPosTest(10.0, 1.0, 9.0)">testDoubleSubPosTest(10.0, 1.0, 9.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSubPosTest(4.3, 2.0, 2.3)">testDoubleSubPosTest(4.3, 2.0, 2.3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSubPosTest(-93.1, 35.0, -128.1)">testDoubleSubPosTest(-93.1, 35.0, -128.1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSumPosTest(11.0, 99.0, 110.0)">testDoubleSumPosTest(11.0, 99.0, 110.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSumPosTest(25.5, 23.7, 49.2)">testDoubleSumPosTest(25.5, 23.7, 49.2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSumPosTest(0.0, 0.0, 0.0)">testDoubleSumPosTest(0.0, 0.0, 0.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSumPosTest(3.0, 7.0, 10.0)">testDoubleSumPosTest(3.0, 7.0, 10.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSumPosTest(-10.0, 50.5, 40.5)">testDoubleSumPosTest(-10.0, 50.5, 40.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSumPosTest(-20.3, -40.5, -60.8)">testDoubleSumPosTest(-20.3, -40.5, -60.8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSumPosTest(0.0, 10.0, 10.0)">testDoubleSumPosTest(0.0, 10.0, 10.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSumPosTest(15.0, 101.0, 116.0)">testDoubleSumPosTest(15.0, 101.0, 116.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Group_Test" title="tests.TestCalculator" hash-for-method="testDoubleSumPosTest(0.01, 10.01, 10.02)">testDoubleSumPosTest(0.01, 10.01, 10.02)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Group_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Group_Test" class="panel Group_Test">
+          <div class="suite-Group_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.TestCalculator</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleCTanNegTest(0.0)">
+                  </a> <!-- testDoubleCTanNegTest(0.0) -->
+                  <span class="method-name">testDoubleCTanNegTest</span>
+                  <span class="parameters">(0.0)</span>
+                  <div class="stack-trace">org.testng.TestException: 
+Method TestCalculator.testDoubleCTanNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Method TestCalculator.testDoubleCTanNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	... 7 more
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleCTanPosTest(57.0, 2.063135125298919)">
+                  </a> <!-- testDoubleCTanPosTest(57.0, 2.063135125298919) -->
+                  <span class="method-name">testDoubleCTanPosTest</span>
+                  <span class="parameters">(57.0, 2.063135125298919)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [2.063135125298919] but found [1.0]
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleCTanPosTest(4.0, 0.8636911544506167)">
+                  </a> <!-- testDoubleCTanPosTest(4.0, 0.8636911544506167) -->
+                  <span class="method-name">testDoubleCTanPosTest</span>
+                  <span class="parameters">(4.0, 0.8636911544506167)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.8636911544506167] but found [0.999329299739067]
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleCTanPosTest(50.0, -3.6778144508505695)">
+                  </a> <!-- testDoubleCTanPosTest(50.0, -3.6778144508505695) -->
+                  <span class="method-name">testDoubleCTanPosTest</span>
+                  <span class="parameters">(50.0, -3.6778144508505695)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-3.6778144508505695] but found [1.0]
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleCTanPosTest(34.0, -1.6038519064146899)">
+                  </a> <!-- testDoubleCTanPosTest(34.0, -1.6038519064146899) -->
+                  <span class="method-name">testDoubleCTanPosTest</span>
+                  <span class="parameters">(34.0, -1.6038519064146899)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-1.6038519064146899] but found [1.0]
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleCTanPosTest(95.0, 1.0686586782881817)">
+                  </a> <!-- testDoubleCTanPosTest(95.0, 1.0686586782881817) -->
+                  <span class="method-name">testDoubleCTanPosTest</span>
+                  <span class="parameters">(95.0, 1.0686586782881817)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1.0686586782881817] but found [1.0]
+	at tests.TestCalculator.testDoubleCTanPosTest(TestCalculator.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleCosPosTest(3.0, -0.9899924966004454)">
+                  </a> <!-- testDoubleCosPosTest(3.0, -0.9899924966004454) -->
+                  <span class="method-name">testDoubleCosPosTest</span>
+                  <span class="parameters">(3.0, -0.9899924966004454)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-0.9899924966004454] but found [0.1411200080598672]
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleCosPosTest(180.0, -0.5984600690578581)">
+                  </a> <!-- testDoubleCosPosTest(180.0, -0.5984600690578581) -->
+                  <span class="method-name">testDoubleCosPosTest</span>
+                  <span class="parameters">(180.0, -0.5984600690578581)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-0.5984600690578581] but found [-0.8011526357338304]
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleCosPosTest(0.0, 1.0)">
+                  </a> <!-- testDoubleCosPosTest(0.0, 1.0) -->
+                  <span class="method-name">testDoubleCosPosTest</span>
+                  <span class="parameters">(0.0, 1.0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1.0] but found [0.0]
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleCosPosTest(30.0, 0.15425144988758405)">
+                  </a> <!-- testDoubleCosPosTest(30.0, 0.15425144988758405) -->
+                  <span class="method-name">testDoubleCosPosTest</span>
+                  <span class="parameters">(30.0, 0.15425144988758405)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.15425144988758405] but found [-0.9880316240928618]
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleCosPosTest(12.0, 0.8438539587324921)">
+                  </a> <!-- testDoubleCosPosTest(12.0, 0.8438539587324921) -->
+                  <span class="method-name">testDoubleCosPosTest</span>
+                  <span class="parameters">(12.0, 0.8438539587324921)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.8438539587324921] but found [-0.5365729180004349]
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleCosPosTest(60.0, -0.9524129804151563)">
+                  </a> <!-- testDoubleCosPosTest(60.0, -0.9524129804151563) -->
+                  <span class="method-name">testDoubleCosPosTest</span>
+                  <span class="parameters">(60.0, -0.9524129804151563)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-0.9524129804151563] but found [-0.3048106211022167]
+	at tests.TestCalculator.testDoubleCosPosTest(TestCalculator.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleDivNegTest">
+                  </a> <!-- testDoubleDivNegTest -->
+                  <span class="method-name">testDoubleDivNegTest</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+The data provider is trying to pass 3 parameters but the method tests.TestCalculator#testDoubleDivNegTest takes 2
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSqrtNegTest(-6.0)">
+                  </a> <!-- testDoubleSqrtNegTest(-6.0) -->
+                  <span class="method-name">testDoubleSqrtNegTest</span>
+                  <span class="parameters">(-6.0)</span>
+                  <div class="stack-trace">org.testng.TestException: 
+Method TestCalculator.testDoubleSqrtNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Method TestCalculator.testDoubleSqrtNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	... 7 more
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSqrtNegTest(-3.0)">
+                  </a> <!-- testDoubleSqrtNegTest(-3.0) -->
+                  <span class="method-name">testDoubleSqrtNegTest</span>
+                  <span class="parameters">(-3.0)</span>
+                  <div class="stack-trace">org.testng.TestException: 
+Method TestCalculator.testDoubleSqrtNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Method TestCalculator.testDoubleSqrtNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	... 7 more
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleTanNegTest(90.0)">
+                  </a> <!-- testDoubleTanNegTest(90.0) -->
+                  <span class="method-name">testDoubleTanNegTest</span>
+                  <span class="parameters">(90.0)</span>
+                  <div class="stack-trace">org.testng.TestException: 
+Method TestCalculator.testDoubleTanNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Method TestCalculator.testDoubleTanNegTest(double)[pri:0, instance:tests.TestCalculator@1bc6a36e] should have thrown an exception of class java.lang.IllegalArgumentException
+	... 7 more
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleTanPosTest(2.0, -2.185039863261519)">
+                  </a> <!-- testDoubleTanPosTest(2.0, -2.185039863261519) -->
+                  <span class="method-name">testDoubleTanPosTest</span>
+                  <span class="parameters">(2.0, -2.185039863261519)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-2.185039863261519] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleTanPosTest(60.0, 0.3200403893795629)">
+                  </a> <!-- testDoubleTanPosTest(60.0, 0.3200403893795629) -->
+                  <span class="method-name">testDoubleTanPosTest</span>
+                  <span class="parameters">(60.0, 0.3200403893795629)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.3200403893795629] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleTanPosTest(180.0, 1.3386902103511544)">
+                  </a> <!-- testDoubleTanPosTest(180.0, 1.3386902103511544) -->
+                  <span class="method-name">testDoubleTanPosTest</span>
+                  <span class="parameters">(180.0, 1.3386902103511544)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1.3386902103511544] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleTanPosTest(7.0, 0.8714479827243188)">
+                  </a> <!-- testDoubleTanPosTest(7.0, 0.8714479827243188) -->
+                  <span class="method-name">testDoubleTanPosTest</span>
+                  <span class="parameters">(7.0, 0.8714479827243188)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.8714479827243188] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleTanPosTest(30.0, -6.4053311966462765)">
+                  </a> <!-- testDoubleTanPosTest(30.0, -6.4053311966462765) -->
+                  <span class="method-name">testDoubleTanPosTest</span>
+                  <span class="parameters">(30.0, -6.4053311966462765)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-6.4053311966462765] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleTanPosTest(0.0, 0.0)">
+                  </a> <!-- testDoubleTanPosTest(0.0, 0.0) -->
+                  <span class="method-name">testDoubleTanPosTest</span>
+                  <span class="parameters">(0.0, 0.0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.0] but found [NaN]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleTanPosTest(4.0, 1.1578212823495775)">
+                  </a> <!-- testDoubleTanPosTest(4.0, 1.1578212823495775) -->
+                  <span class="method-name">testDoubleTanPosTest</span>
+                  <span class="parameters">(4.0, 1.1578212823495775)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1.1578212823495775] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleTanPosTest(6.0, -0.29100619138474915)">
+                  </a> <!-- testDoubleTanPosTest(6.0, -0.29100619138474915) -->
+                  <span class="method-name">testDoubleTanPosTest</span>
+                  <span class="parameters">(6.0, -0.29100619138474915)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-0.29100619138474915] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleTanPosTest(5.0, -3.380515006246586)">
+                  </a> <!-- testDoubleTanPosTest(5.0, -3.380515006246586) -->
+                  <span class="method-name">testDoubleTanPosTest</span>
+                  <span class="parameters">(5.0, -3.380515006246586)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-3.380515006246586] but found [1.0]
+	at tests.TestCalculator.testDoubleTanPosTest(TestCalculator.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Group_Test-class-failed -->
+          <div class="suite-Group_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TestCalculator</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleDivPosTest(-20.0, 43.0, -0.46511627906976744)">
+                  </a> <!-- testDoubleDivPosTest(-20.0, 43.0, -0.46511627906976744) -->
+                  <span class="method-name">testDoubleDivPosTest</span>
+                  <span class="parameters">(-20.0, 43.0, -0.46511627906976744)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleDivPosTest(2.0, 3.0, 0.6666666666666666)">
+                  </a> <!-- testDoubleDivPosTest(2.0, 3.0, 0.6666666666666666) -->
+                  <span class="method-name">testDoubleDivPosTest</span>
+                  <span class="parameters">(2.0, 3.0, 0.6666666666666666)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleDivPosTest(-43.0, -56.0, 0.7678571428571429)">
+                  </a> <!-- testDoubleDivPosTest(-43.0, -56.0, 0.7678571428571429) -->
+                  <span class="method-name">testDoubleDivPosTest</span>
+                  <span class="parameters">(-43.0, -56.0, 0.7678571428571429)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleDivPosTest(100.0, 999.0, 0.1001001001001001)">
+                  </a> <!-- testDoubleDivPosTest(100.0, 999.0, 0.1001001001001001) -->
+                  <span class="method-name">testDoubleDivPosTest</span>
+                  <span class="parameters">(100.0, 999.0, 0.1001001001001001)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleDivPosTest(0.0, 10.0, 0.0)">
+                  </a> <!-- testDoubleDivPosTest(0.0, 10.0, 0.0) -->
+                  <span class="method-name">testDoubleDivPosTest</span>
+                  <span class="parameters">(0.0, 10.0, 0.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleMultPosTest(100.0, 999.0, 99900.0)">
+                  </a> <!-- testDoubleMultPosTest(100.0, 999.0, 99900.0) -->
+                  <span class="method-name">testDoubleMultPosTest</span>
+                  <span class="parameters">(100.0, 999.0, 99900.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleMultPosTest(0.0, 0.0, 0.0)">
+                  </a> <!-- testDoubleMultPosTest(0.0, 0.0, 0.0) -->
+                  <span class="method-name">testDoubleMultPosTest</span>
+                  <span class="parameters">(0.0, 0.0, 0.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleMultPosTest(2.0, 3.0, 6.0)">
+                  </a> <!-- testDoubleMultPosTest(2.0, 3.0, 6.0) -->
+                  <span class="method-name">testDoubleMultPosTest</span>
+                  <span class="parameters">(2.0, 3.0, 6.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleMultPosTest(-20.0, 43.0, -860.0)">
+                  </a> <!-- testDoubleMultPosTest(-20.0, 43.0, -860.0) -->
+                  <span class="method-name">testDoubleMultPosTest</span>
+                  <span class="parameters">(-20.0, 43.0, -860.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleMultPosTest(0.0, 10.0, 0.0)">
+                  </a> <!-- testDoubleMultPosTest(0.0, 10.0, 0.0) -->
+                  <span class="method-name">testDoubleMultPosTest</span>
+                  <span class="parameters">(0.0, 10.0, 0.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleMultPosTest(-43.0, -56.0, 2408.0)">
+                  </a> <!-- testDoubleMultPosTest(-43.0, -56.0, 2408.0) -->
+                  <span class="method-name">testDoubleMultPosTest</span>
+                  <span class="parameters">(-43.0, -56.0, 2408.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoublePowPosTest(2.0, 2.0, 4.0)">
+                  </a> <!-- testDoublePowPosTest(2.0, 2.0, 4.0) -->
+                  <span class="method-name">testDoublePowPosTest</span>
+                  <span class="parameters">(2.0, 2.0, 4.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoublePowPosTest(2.0, 3.0, 8.0)">
+                  </a> <!-- testDoublePowPosTest(2.0, 3.0, 8.0) -->
+                  <span class="method-name">testDoublePowPosTest</span>
+                  <span class="parameters">(2.0, 3.0, 8.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSinPosTest(180.0, -0.8011526357338304)">
+                  </a> <!-- testDoubleSinPosTest(180.0, -0.8011526357338304) -->
+                  <span class="method-name">testDoubleSinPosTest</span>
+                  <span class="parameters">(180.0, -0.8011526357338304)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSinPosTest(30.0, -0.9880316240928618)">
+                  </a> <!-- testDoubleSinPosTest(30.0, -0.9880316240928618) -->
+                  <span class="method-name">testDoubleSinPosTest</span>
+                  <span class="parameters">(30.0, -0.9880316240928618)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSinPosTest(12.0, -0.5365729180004349)">
+                  </a> <!-- testDoubleSinPosTest(12.0, -0.5365729180004349) -->
+                  <span class="method-name">testDoubleSinPosTest</span>
+                  <span class="parameters">(12.0, -0.5365729180004349)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSinPosTest(0.0, 0.0)">
+                  </a> <!-- testDoubleSinPosTest(0.0, 0.0) -->
+                  <span class="method-name">testDoubleSinPosTest</span>
+                  <span class="parameters">(0.0, 0.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSinPosTest(60.0, -0.3048106211022167)">
+                  </a> <!-- testDoubleSinPosTest(60.0, -0.3048106211022167) -->
+                  <span class="method-name">testDoubleSinPosTest</span>
+                  <span class="parameters">(60.0, -0.3048106211022167)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSinPosTest(3.0, 0.1411200080598672)">
+                  </a> <!-- testDoubleSinPosTest(3.0, 0.1411200080598672) -->
+                  <span class="method-name">testDoubleSinPosTest</span>
+                  <span class="parameters">(3.0, 0.1411200080598672)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSqrtPosTest(4.0, 2.0)">
+                  </a> <!-- testDoubleSqrtPosTest(4.0, 2.0) -->
+                  <span class="method-name">testDoubleSqrtPosTest</span>
+                  <span class="parameters">(4.0, 2.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSqrtPosTest(9.0, 3.0)">
+                  </a> <!-- testDoubleSqrtPosTest(9.0, 3.0) -->
+                  <span class="method-name">testDoubleSqrtPosTest</span>
+                  <span class="parameters">(9.0, 3.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSubPosTest(-68.0, -54.5, -13.5)">
+                  </a> <!-- testDoubleSubPosTest(-68.0, -54.5, -13.5) -->
+                  <span class="method-name">testDoubleSubPosTest</span>
+                  <span class="parameters">(-68.0, -54.5, -13.5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSubPosTest(99.3, 72.0, 27.299999999999997)">
+                  </a> <!-- testDoubleSubPosTest(99.3, 72.0, 27.299999999999997) -->
+                  <span class="method-name">testDoubleSubPosTest</span>
+                  <span class="parameters">(99.3, 72.0, 27.299999999999997)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSubPosTest(0.0, 0.0, 0.0)">
+                  </a> <!-- testDoubleSubPosTest(0.0, 0.0, 0.0) -->
+                  <span class="method-name">testDoubleSubPosTest</span>
+                  <span class="parameters">(0.0, 0.0, 0.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSubPosTest(83.0, 96.0, -13.0)">
+                  </a> <!-- testDoubleSubPosTest(83.0, 96.0, -13.0) -->
+                  <span class="method-name">testDoubleSubPosTest</span>
+                  <span class="parameters">(83.0, 96.0, -13.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSubPosTest(10.0, 1.0, 9.0)">
+                  </a> <!-- testDoubleSubPosTest(10.0, 1.0, 9.0) -->
+                  <span class="method-name">testDoubleSubPosTest</span>
+                  <span class="parameters">(10.0, 1.0, 9.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSubPosTest(4.3, 2.0, 2.3)">
+                  </a> <!-- testDoubleSubPosTest(4.3, 2.0, 2.3) -->
+                  <span class="method-name">testDoubleSubPosTest</span>
+                  <span class="parameters">(4.3, 2.0, 2.3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSubPosTest(-93.1, 35.0, -128.1)">
+                  </a> <!-- testDoubleSubPosTest(-93.1, 35.0, -128.1) -->
+                  <span class="method-name">testDoubleSubPosTest</span>
+                  <span class="parameters">(-93.1, 35.0, -128.1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSumPosTest(11.0, 99.0, 110.0)">
+                  </a> <!-- testDoubleSumPosTest(11.0, 99.0, 110.0) -->
+                  <span class="method-name">testDoubleSumPosTest</span>
+                  <span class="parameters">(11.0, 99.0, 110.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSumPosTest(25.5, 23.7, 49.2)">
+                  </a> <!-- testDoubleSumPosTest(25.5, 23.7, 49.2) -->
+                  <span class="method-name">testDoubleSumPosTest</span>
+                  <span class="parameters">(25.5, 23.7, 49.2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSumPosTest(0.0, 0.0, 0.0)">
+                  </a> <!-- testDoubleSumPosTest(0.0, 0.0, 0.0) -->
+                  <span class="method-name">testDoubleSumPosTest</span>
+                  <span class="parameters">(0.0, 0.0, 0.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSumPosTest(3.0, 7.0, 10.0)">
+                  </a> <!-- testDoubleSumPosTest(3.0, 7.0, 10.0) -->
+                  <span class="method-name">testDoubleSumPosTest</span>
+                  <span class="parameters">(3.0, 7.0, 10.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSumPosTest(-10.0, 50.5, 40.5)">
+                  </a> <!-- testDoubleSumPosTest(-10.0, 50.5, 40.5) -->
+                  <span class="method-name">testDoubleSumPosTest</span>
+                  <span class="parameters">(-10.0, 50.5, 40.5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSumPosTest(-20.3, -40.5, -60.8)">
+                  </a> <!-- testDoubleSumPosTest(-20.3, -40.5, -60.8) -->
+                  <span class="method-name">testDoubleSumPosTest</span>
+                  <span class="parameters">(-20.3, -40.5, -60.8)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSumPosTest(0.0, 10.0, 10.0)">
+                  </a> <!-- testDoubleSumPosTest(0.0, 10.0, 10.0) -->
+                  <span class="method-name">testDoubleSumPosTest</span>
+                  <span class="parameters">(0.0, 10.0, 10.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSumPosTest(15.0, 101.0, 116.0)">
+                  </a> <!-- testDoubleSumPosTest(15.0, 101.0, 116.0) -->
+                  <span class="method-name">testDoubleSumPosTest</span>
+                  <span class="parameters">(15.0, 101.0, 116.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDoubleSumPosTest(0.01, 10.01, 10.02)">
+                  </a> <!-- testDoubleSumPosTest(0.01, 10.01, 10.02) -->
+                  <span class="method-name">testDoubleSumPosTest</span>
+                  <span class="parameters">(0.01, 10.01, 10.02)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Group_Test-class-passed -->
+        </div> <!-- panel Group_Test -->
+        <div panel-name="test-xml-Group_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Lev_Serba\Desktop\Calculator\src\test\resources\testDouble.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;20&quot; name=&quot;Group Test&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test name=&quot;TestNG Group&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;double&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.TestCalculator&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestNG Group --&gt;
+&lt;/suite&gt; &lt;!-- Group Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Group_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Group Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestNG Group (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Group_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Group Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">double</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleCTanNegTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleCTanPosTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleCosPosTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleDivNegTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleDivPosTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleMultPosTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoublePowPosTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleSinPosTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleSqrtNegTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleSqrtPosTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleSubPosTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleSumPosTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleTanNegTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDoubleTanPosTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Group_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Group Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Group_Test');
+function tableData_Group_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(62);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testDoubleDivPosTest')
+data.setCell(0, 2, 'tests.TestCalculator')
+data.setCell(0, 3, 1041);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testDoubleDivPosTest')
+data.setCell(1, 2, 'tests.TestCalculator')
+data.setCell(1, 3, 1041);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testDoubleDivPosTest')
+data.setCell(2, 2, 'tests.TestCalculator')
+data.setCell(2, 3, 1041);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testDoubleDivPosTest')
+data.setCell(3, 2, 'tests.TestCalculator')
+data.setCell(3, 3, 1024);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDoubleCTanNegTest')
+data.setCell(4, 2, 'tests.TestCalculator')
+data.setCell(4, 3, 1023);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testDoubleSinPosTest')
+data.setCell(5, 2, 'tests.TestCalculator')
+data.setCell(5, 3, 1018);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testDoubleSinPosTest')
+data.setCell(6, 2, 'tests.TestCalculator')
+data.setCell(6, 3, 1015);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testDoubleSinPosTest')
+data.setCell(7, 2, 'tests.TestCalculator')
+data.setCell(7, 3, 1014);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testDoubleSinPosTest')
+data.setCell(8, 2, 'tests.TestCalculator')
+data.setCell(8, 3, 1013);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testDoubleSumPosTest')
+data.setCell(9, 2, 'tests.TestCalculator')
+data.setCell(9, 3, 1013);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testDoubleSinPosTest')
+data.setCell(10, 2, 'tests.TestCalculator')
+data.setCell(10, 3, 1013);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testDoubleSinPosTest')
+data.setCell(11, 2, 'tests.TestCalculator')
+data.setCell(11, 3, 1013);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testDoubleSumPosTest')
+data.setCell(12, 2, 'tests.TestCalculator')
+data.setCell(12, 3, 1013);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testDoubleSubPosTest')
+data.setCell(13, 2, 'tests.TestCalculator')
+data.setCell(13, 3, 1012);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testDoubleSubPosTest')
+data.setCell(14, 2, 'tests.TestCalculator')
+data.setCell(14, 3, 1012);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testDoubleSubPosTest')
+data.setCell(15, 2, 'tests.TestCalculator')
+data.setCell(15, 3, 1012);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testDoubleSubPosTest')
+data.setCell(16, 2, 'tests.TestCalculator')
+data.setCell(16, 3, 1012);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testDoubleSumPosTest')
+data.setCell(17, 2, 'tests.TestCalculator')
+data.setCell(17, 3, 1012);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testDoublePowPosTest')
+data.setCell(18, 2, 'tests.TestCalculator')
+data.setCell(18, 3, 1011);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testDoubleSubPosTest')
+data.setCell(19, 2, 'tests.TestCalculator')
+data.setCell(19, 3, 1011);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testDoubleSubPosTest')
+data.setCell(20, 2, 'tests.TestCalculator')
+data.setCell(20, 3, 1011);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testDoubleSubPosTest')
+data.setCell(21, 2, 'tests.TestCalculator')
+data.setCell(21, 3, 1011);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testDoublePowPosTest')
+data.setCell(22, 2, 'tests.TestCalculator')
+data.setCell(22, 3, 1011);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testDoubleSqrtNegTest')
+data.setCell(23, 2, 'tests.TestCalculator')
+data.setCell(23, 3, 1011);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testDoubleSqrtNegTest')
+data.setCell(24, 2, 'tests.TestCalculator')
+data.setCell(24, 3, 1011);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testDoubleDivPosTest')
+data.setCell(25, 2, 'tests.TestCalculator')
+data.setCell(25, 3, 1010);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testDoubleSumPosTest')
+data.setCell(26, 2, 'tests.TestCalculator')
+data.setCell(26, 3, 1009);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testDoubleSumPosTest')
+data.setCell(27, 2, 'tests.TestCalculator')
+data.setCell(27, 3, 1008);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testDoubleSumPosTest')
+data.setCell(28, 2, 'tests.TestCalculator')
+data.setCell(28, 3, 1007);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testDoubleTanNegTest')
+data.setCell(29, 2, 'tests.TestCalculator')
+data.setCell(29, 3, 1006);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testDoubleSqrtPosTest')
+data.setCell(30, 2, 'tests.TestCalculator')
+data.setCell(30, 3, 1004);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testDoubleSqrtPosTest')
+data.setCell(31, 2, 'tests.TestCalculator')
+data.setCell(31, 3, 1004);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testDoubleMultPosTest')
+data.setCell(32, 2, 'tests.TestCalculator')
+data.setCell(32, 3, 1003);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testDoubleMultPosTest')
+data.setCell(33, 2, 'tests.TestCalculator')
+data.setCell(33, 3, 1003);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testDoubleMultPosTest')
+data.setCell(34, 2, 'tests.TestCalculator')
+data.setCell(34, 3, 1003);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testDoubleMultPosTest')
+data.setCell(35, 2, 'tests.TestCalculator')
+data.setCell(35, 3, 1003);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testDoubleSumPosTest')
+data.setCell(36, 2, 'tests.TestCalculator')
+data.setCell(36, 3, 1002);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testDoubleMultPosTest')
+data.setCell(37, 2, 'tests.TestCalculator')
+data.setCell(37, 3, 1002);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testDoubleMultPosTest')
+data.setCell(38, 2, 'tests.TestCalculator')
+data.setCell(38, 3, 1002);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testDoubleSumPosTest')
+data.setCell(39, 2, 'tests.TestCalculator')
+data.setCell(39, 3, 1001);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testDoubleSumPosTest')
+data.setCell(40, 2, 'tests.TestCalculator')
+data.setCell(40, 3, 1001);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testDoubleDivNegTest')
+data.setCell(41, 2, 'tests.TestCalculator')
+data.setCell(41, 3, 185);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testDoubleCTanPosTest')
+data.setCell(42, 2, 'tests.TestCalculator')
+data.setCell(42, 3, 34);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'testDoubleTanPosTest')
+data.setCell(43, 2, 'tests.TestCalculator')
+data.setCell(43, 3, 22);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'testDoubleTanPosTest')
+data.setCell(44, 2, 'tests.TestCalculator')
+data.setCell(44, 3, 20);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'testDoubleTanPosTest')
+data.setCell(45, 2, 'tests.TestCalculator')
+data.setCell(45, 3, 20);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'testDoubleTanPosTest')
+data.setCell(46, 2, 'tests.TestCalculator')
+data.setCell(46, 3, 16);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'testDoubleTanPosTest')
+data.setCell(47, 2, 'tests.TestCalculator')
+data.setCell(47, 3, 15);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'testDoubleCosPosTest')
+data.setCell(48, 2, 'tests.TestCalculator')
+data.setCell(48, 3, 13);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'testDoubleCosPosTest')
+data.setCell(49, 2, 'tests.TestCalculator')
+data.setCell(49, 3, 12);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'testDoubleCosPosTest')
+data.setCell(50, 2, 'tests.TestCalculator')
+data.setCell(50, 3, 10);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'testDoubleCosPosTest')
+data.setCell(51, 2, 'tests.TestCalculator')
+data.setCell(51, 3, 9);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'testDoubleCosPosTest')
+data.setCell(52, 2, 'tests.TestCalculator')
+data.setCell(52, 3, 5);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'testDoubleCosPosTest')
+data.setCell(53, 2, 'tests.TestCalculator')
+data.setCell(53, 3, 2);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'testDoubleCTanPosTest')
+data.setCell(54, 2, 'tests.TestCalculator')
+data.setCell(54, 3, 2);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'testDoubleCTanPosTest')
+data.setCell(55, 2, 'tests.TestCalculator')
+data.setCell(55, 3, 2);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'testDoubleTanPosTest')
+data.setCell(56, 2, 'tests.TestCalculator')
+data.setCell(56, 3, 1);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'testDoubleCTanPosTest')
+data.setCell(57, 2, 'tests.TestCalculator')
+data.setCell(57, 3, 1);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'testDoubleCTanPosTest')
+data.setCell(58, 2, 'tests.TestCalculator')
+data.setCell(58, 3, 1);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'testDoubleTanPosTest')
+data.setCell(59, 2, 'tests.TestCalculator')
+data.setCell(59, 3, 0);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'testDoubleTanPosTest')
+data.setCell(60, 2, 'tests.TestCalculator')
+data.setCell(60, 3, 0);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'testDoubleTanPosTest')
+data.setCell(61, 2, 'tests.TestCalculator')
+data.setCell(61, 3, 0);
+window.suiteTableData['Group_Test']= { tableData: data, tableDiv: 'times-div-Group_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <div id="times-div-Group_Test">
+              </div> <!-- times-div-Group_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Group_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Group Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSumPosTest(11.0, 99.0, 110.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1002</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSumPosTest] has passed within [1002].Thread ID: 34</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSinPosTest(180.0, -0.8011526357338304)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSinPosTest Elapsed time: -1013</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSinPosTest] has passed within [1013].Thread ID: 29</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSumPosTest(25.5, 23.7, 49.2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1001</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSumPosTest] has passed within [1001].Thread ID: 36</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleMultPosTest(100.0, 999.0, 99900.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleMultPosTest Elapsed time: -1003</span>
+                <span class="reporter-method-output"></br>Test [testDoubleMultPosTest] has passed within [1003].Thread ID: 43</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSumPosTest(0.0, 0.0, 0.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1013</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSumPosTest] has passed within [1013].Thread ID: 39</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSubPosTest(-68.0, -54.5, -13.5)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1012</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSubPosTest] has passed within [1012].Thread ID: 85</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleMultPosTest(0.0, 0.0, 0.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleMultPosTest Elapsed time: -1002</span>
+                <span class="reporter-method-output"></br>Test [testDoubleMultPosTest] has passed within [1002].Thread ID: 40</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSubPosTest(99.3, 72.0, 27.299999999999997)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1012</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSubPosTest] has passed within [1012].Thread ID: 82</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSumPosTest(3.0, 7.0, 10.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1009</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSumPosTest] has passed within [1009].Thread ID: 33</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSinPosTest(30.0, -0.9880316240928618)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSinPosTest Elapsed time: -1013</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSinPosTest] has passed within [1013].Thread ID: 28</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleMultPosTest(2.0, 3.0, 6.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleMultPosTest Elapsed time: -1002</span>
+                <span class="reporter-method-output"></br>Test [testDoubleMultPosTest] has passed within [1002].Thread ID: 41</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoublePowPosTest(2.0, 2.0, 4.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoublePowPosTest Elapsed time: -1011</span>
+                <span class="reporter-method-output"></br>Test [testDoublePowPosTest] has passed within [1011].Thread ID: 75</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSubPosTest(0.0, 0.0, 0.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1011</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSubPosTest] has passed within [1011].Thread ID: 79</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleDivPosTest(-20.0, 43.0, -0.46511627906976744)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleDivPosTest Elapsed time: -1041</span>
+                <span class="reporter-method-output"></br>Test [testDoubleDivPosTest] has passed within [1041].Thread ID: 68</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleDivPosTest(2.0, 3.0, 0.6666666666666666)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleDivPosTest Elapsed time: -1024</span>
+                <span class="reporter-method-output"></br>Test [testDoubleDivPosTest] has passed within [1024].Thread ID: 65</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSqrtPosTest(4.0, 2.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSqrtPosTest Elapsed time: -1004</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSqrtPosTest] has passed within [1004].Thread ID: 46</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSumPosTest(-10.0, 50.5, 40.5)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1001</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSumPosTest] has passed within [1001].Thread ID: 37</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSinPosTest(12.0, -0.5365729180004349)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSinPosTest Elapsed time: -1014</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSinPosTest] has passed within [1014].Thread ID: 27</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSubPosTest(83.0, 96.0, -13.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1012</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSubPosTest] has passed within [1012].Thread ID: 83</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleMultPosTest(-20.0, 43.0, -860.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleMultPosTest Elapsed time: -1003</span>
+                <span class="reporter-method-output"></br>Test [testDoubleMultPosTest] has passed within [1003].Thread ID: 44</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleMultPosTest(0.0, 10.0, 0.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleMultPosTest Elapsed time: -1003</span>
+                <span class="reporter-method-output"></br>Test [testDoubleMultPosTest] has passed within [1003].Thread ID: 42</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSinPosTest(0.0, 0.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSinPosTest Elapsed time: -1013</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSinPosTest] has passed within [1013].Thread ID: 30</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSumPosTest(-20.3, -40.5, -60.8)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1007</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSumPosTest] has passed within [1007].Thread ID: 38</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleDivPosTest(-43.0, -56.0, 0.7678571428571429)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleDivPosTest Elapsed time: -1010</span>
+                <span class="reporter-method-output"></br>Test [testDoubleDivPosTest] has passed within [1010].Thread ID: 69</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleMultPosTest(-43.0, -56.0, 2408.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleMultPosTest Elapsed time: -1003</span>
+                <span class="reporter-method-output"></br>Test [testDoubleMultPosTest] has passed within [1003].Thread ID: 45</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSubPosTest(10.0, 1.0, 9.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1011</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSubPosTest] has passed within [1011].Thread ID: 81</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSumPosTest(0.0, 10.0, 10.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1013</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSumPosTest] has passed within [1013].Thread ID: 31</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleDivPosTest(100.0, 999.0, 0.1001001001001001)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleDivPosTest Elapsed time: -1041</span>
+                <span class="reporter-method-output"></br>Test [testDoubleDivPosTest] has passed within [1041].Thread ID: 67</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSubPosTest(4.3, 2.0, 2.3)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1011</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSubPosTest] has passed within [1011].Thread ID: 80</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSubPosTest(-93.1, 35.0, -128.1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSubPosTest Elapsed time: -1012</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSubPosTest] has passed within [1012].Thread ID: 84</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleDivPosTest(0.0, 10.0, 0.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleDivPosTest Elapsed time: -1041</span>
+                <span class="reporter-method-output"></br>Test [testDoubleDivPosTest] has passed within [1041].Thread ID: 66</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSinPosTest(60.0, -0.3048106211022167)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSinPosTest Elapsed time: -1015</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSinPosTest] has passed within [1015].Thread ID: 26</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSumPosTest(15.0, 101.0, 116.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1008</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSumPosTest] has passed within [1008].Thread ID: 35</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoublePowPosTest(2.0, 3.0, 8.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoublePowPosTest Elapsed time: -1011</span>
+                <span class="reporter-method-output"></br>Test [testDoublePowPosTest] has passed within [1011].Thread ID: 76</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSqrtPosTest(9.0, 3.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSqrtPosTest Elapsed time: -1004</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSqrtPosTest] has passed within [1004].Thread ID: 47</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSumPosTest(0.01, 10.01, 10.02)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSumPosTest Elapsed time: -1012</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSumPosTest] has passed within [1012].Thread ID: 32</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSinPosTest(3.0, 0.1411200080598672)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSinPosTest Elapsed time: -1018</span>
+                <span class="reporter-method-output"></br>Test [testDoubleSinPosTest] has passed within [1018].Thread ID: 25</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleTanPosTest(2.0, -2.185039863261519)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: -1</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleTanPosTest(60.0, 0.3200403893795629)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: 0</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleCosPosTest(3.0, -0.9899924966004454)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleCosPosTest Elapsed time: -2</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleCTanPosTest(57.0, 2.063135125298919)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleCTanPosTest Elapsed time: -1</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSqrtNegTest(-6.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSqrtNegTest Elapsed time: -1011</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleCTanPosTest(4.0, 0.8636911544506167)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleCTanPosTest Elapsed time: -2</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleCTanPosTest(50.0, -3.6778144508505695)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleCTanPosTest Elapsed time: -34</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleTanPosTest(180.0, 1.3386902103511544)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: -22</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleTanNegTest(90.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleTanNegTest Elapsed time: -1006</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleCosPosTest(180.0, -0.5984600690578581)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleCosPosTest Elapsed time: -12</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleTanPosTest(7.0, 0.8714479827243188)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: -20</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleCTanNegTest(0.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleCTanNegTest Elapsed time: -1023</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleCosPosTest(0.0, 1.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleCosPosTest Elapsed time: -13</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleTanPosTest(30.0, -6.4053311966462765)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: -16</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleCosPosTest(30.0, 0.15425144988758405)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleCosPosTest Elapsed time: -10</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleCosPosTest(12.0, 0.8438539587324921)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleCosPosTest Elapsed time: -9</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleTanPosTest(0.0, 0.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: -15</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleTanPosTest(4.0, 1.1578212823495775)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: 0</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleSqrtNegTest(-3.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleSqrtNegTest Elapsed time: -1011</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleCTanPosTest(34.0, -1.6038519064146899)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleCTanPosTest Elapsed time: -1</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleTanPosTest(6.0, -0.29100619138474915)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: -20</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleCosPosTest(60.0, -0.9524129804151563)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleCosPosTest Elapsed time: -5</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleTanPosTest(5.0, -3.380515006246586)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleTanPosTest Elapsed time: 0</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDoubleCTanPosTest(95.0, 1.0686586782881817)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></br>Completed executing method: TestCalculator.testDoubleCTanPosTest Elapsed time: -2</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Group_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">9 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.TestCalculator</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testLongDivNegTest</span>
+                <br/>
+                <span class="ignored-method-name">testLongIsPosNegTest</span>
+                <br/>
+                <span class="ignored-method-name">testLongSumPosTest</span>
+                <br/>
+                <span class="ignored-method-name">testLongIsNegNegTest</span>
+                <br/>
+                <span class="ignored-method-name">testLongIsPosPosTest</span>
+                <br/>
+                <span class="ignored-method-name">testLongDivPosTest</span>
+                <br/>
+                <span class="ignored-method-name">testLongIsNegPosTest</span>
+                <br/>
+                <span class="ignored-method-name">testLongSubPosTest</span>
+                <br/>
+                <span class="ignored-method-name">testLongMultPosTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Group_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TestCalculator</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSinPosTest(3.0, 0.1411200080598672)</span>
+                <span class="method-start">261 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSinPosTest(60.0, -0.3048106211022167)</span>
+                <span class="method-start">264 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSinPosTest(12.0, -0.5365729180004349)</span>
+                <span class="method-start">265 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSinPosTest(30.0, -0.9880316240928618)</span>
+                <span class="method-start">266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSinPosTest(180.0, -0.8011526357338304)</span>
+                <span class="method-start">266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSinPosTest(0.0, 0.0)</span>
+                <span class="method-start">266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSumPosTest(0.0, 10.0, 10.0)</span>
+                <span class="method-start">266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSumPosTest(0.01, 10.01, 10.02)</span>
+                <span class="method-start">267 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSumPosTest(3.0, 7.0, 10.0)</span>
+                <span class="method-start">270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSumPosTest(11.0, 99.0, 110.0)</span>
+                <span class="method-start">270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSumPosTest(15.0, 101.0, 116.0)</span>
+                <span class="method-start">271 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSumPosTest(25.5, 23.7, 49.2)</span>
+                <span class="method-start">271 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSumPosTest(-10.0, 50.5, 40.5)</span>
+                <span class="method-start">271 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSumPosTest(-20.3, -40.5, -60.8)</span>
+                <span class="method-start">272 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSumPosTest(0.0, 0.0, 0.0)</span>
+                <span class="method-start">281 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSubPosTest(-68.0, -54.5, -13.5)</span>
+                <span class="method-start">282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSubPosTest(-93.1, 35.0, -128.1)</span>
+                <span class="method-start">282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSubPosTest(83.0, 96.0, -13.0)</span>
+                <span class="method-start">282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSubPosTest(99.3, 72.0, 27.299999999999997)</span>
+                <span class="method-start">282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleCTanPosTest(95.0, 1.0686586782881817)</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleCTanPosTest(57.0, 2.063135125298919)</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleCTanPosTest(34.0, -1.6038519064146899)</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleCTanPosTest(4.0, 0.8636911544506167)</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleCTanPosTest(50.0, -3.6778144508505695)</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoublePowPosTest(2.0, 3.0, 8.0)</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoublePowPosTest(2.0, 2.0, 4.0)</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleSqrtNegTest(-6.0)</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleSqrtNegTest(-3.0)</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSubPosTest(4.3, 2.0, 2.3)</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSubPosTest(10.0, 1.0, 9.0)</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSubPosTest(0.0, 0.0, 0.0)</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleDivPosTest(-43.0, -56.0, 0.7678571428571429)</span>
+                <span class="method-start">284 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleDivPosTest(0.0, 10.0, 0.0)</span>
+                <span class="method-start">285 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleDivPosTest(100.0, 999.0, 0.1001001001001001)</span>
+                <span class="method-start">285 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleDivPosTest(-20.0, 43.0, -0.46511627906976744)</span>
+                <span class="method-start">285 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleDivPosTest(2.0, 3.0, 0.6666666666666666)</span>
+                <span class="method-start">286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleTanPosTest(5.0, -3.380515006246586)</span>
+                <span class="method-start">286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleTanPosTest(4.0, 1.1578212823495775)</span>
+                <span class="method-start">286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleTanPosTest(2.0, -2.185039863261519)</span>
+                <span class="method-start">286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleTanPosTest(7.0, 0.8714479827243188)</span>
+                <span class="method-start">286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleTanPosTest(6.0, -0.29100619138474915)</span>
+                <span class="method-start">286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleTanPosTest(180.0, 1.3386902103511544)</span>
+                <span class="method-start">286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleCTanNegTest(0.0)</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleCosPosTest(60.0, -0.9524129804151563)</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleCosPosTest(12.0, 0.8438539587324921)</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleCosPosTest(30.0, 0.15425144988758405)</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleCosPosTest(180.0, -0.5984600690578581)</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleCosPosTest(0.0, 1.0)</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleTanPosTest(60.0, 0.3200403893795629)</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleTanPosTest(0.0, 0.0)</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleTanPosTest(30.0, -6.4053311966462765)</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleCosPosTest(3.0, -0.9899924966004454)</span>
+                <span class="method-start">288 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDoubleTanNegTest(90.0)</span>
+                <span class="method-start">288 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSqrtPosTest(4.0, 2.0)</span>
+                <span class="method-start">290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleSqrtPosTest(9.0, 3.0)</span>
+                <span class="method-start">290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleMultPosTest(-43.0, -56.0, 2408.0)</span>
+                <span class="method-start">291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleMultPosTest(-20.0, 43.0, -860.0)</span>
+                <span class="method-start">291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleMultPosTest(100.0, 999.0, 99900.0)</span>
+                <span class="method-start">291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleMultPosTest(0.0, 10.0, 0.0)</span>
+                <span class="method-start">291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleMultPosTest(2.0, 3.0, 6.0)</span>
+                <span class="method-start">292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDoubleMultPosTest(0.0, 0.0, 0.0)</span>
+                <span class="method-start">292 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
